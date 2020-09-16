@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRedDark" >
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <LinearLayout
+            android:background="@color/colorRedMostDark"
+            android:layout_width="320dp"
+            android:layout_height="100dp">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:text="Bildirimler"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <TableLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <!--android:stretchColumns="0"-->
+
+            <TableRow>
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:background="@color/colorAccent"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/buying" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Alım"
+                        android:textColor="@color/colorRedMostDark"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:background="@color/colorAccent"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/operation" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="İşlem"
+                        android:textColor="@color/colorRedMostDark" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_margin="10dp"
+                    android:background="@color/colorAccent"
+                    android:orientation="vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingBottom="5dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@mipmap/delivery" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:text="Teslimat"
+                        android:textColor="@color/colorRedMostDark"
+
+                        />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+                <LinearLayout
+                    android:background="@color/colorAccent"
+                    android:layout_margin="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="5dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        android:src="@mipmap/ready"/>
+
+                    <TextView
+                        android:textColor="@color/colorRedMostDark"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:text="Hazır"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/colorAccent"
+                    android:layout_margin="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="5dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        android:src="@mipmap/giving_back"/>
+
+                    <TextView
+                        android:textColor="@color/colorRedMostDark"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:text="İade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/colorAccent"
+                    android:layout_margin="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="5dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        android:src="@mipmap/tick"/>
+
+                    <TextView
+                        android:textColor="@color/colorRedMostDark"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:text="Veresiye"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow>
+                <LinearLayout
+                    android:background="@color/colorAccent"
+                    android:layout_margin="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="5dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        android:src="@mipmap/expense"/>
+
+                    <TextView
+                        android:textColor="@color/colorRedMostDark"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:text="Gider"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/colorAccent"
+                    android:layout_margin="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="5dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        android:src="@mipmap/customer"/>
+
+                    <TextView
+                        android:textColor="@color/colorRedMostDark"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:text="Müşteri"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:background="@color/colorAccent"
+                    android:layout_margin="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="5dp"
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_height="50dp"
+                        android:layout_width="50dp"
+                        android:src="@mipmap/end_of_the_day"/>
+
+                    <TextView
+                        android:textColor="@color/colorRedMostDark"
+                        android:layout_marginTop="10dp"
+                        android:layout_gravity="center"
+                        android:text="Günsonu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        />
+                </LinearLayout>
+            </TableRow>
+        </TableLayout>
+
+
+        <Button
+            android:textAllCaps="false"
+            android:textColor="@color/colorRedMostDark"
+            android:text="Hazıra Al"
+            android:background="@color/colorAccent"
+            android:layout_width="320dp"
+            android:layout_height="45dp"/>
+
+    </LinearLayout>
+</LinearLayout>
