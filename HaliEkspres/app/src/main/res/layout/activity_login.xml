@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="loginViewModel"
+            type="com.mervemutlu.haliekspres.ui.login.LoginViewModel"
+            />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLoginBg"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_marginTop="100dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/white_logo"/>
+
+            <EditText
+                android:text="@{loginViewModel.userName}"
+                android:textColor="@color/textColor"
+                android:id="@+id/edt_username"
+                android:textColorHint="@android:color/secondary_text_dark"
+                android:layout_marginTop="120dp"
+                android:padding="15dp"
+                android:hint="Kullanıcı Adı"
+                android:background="@drawable/bg_edittext"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:text="@{loginViewModel.password}"
+                android:textColor="@color/textColor"
+                android:id="@+id/edt_password"
+                android:textColorHint="@android:color/secondary_text_dark"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:hint="Şifre"
+                android:background="@drawable/bg_edittext"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"/>
+
+            <CheckBox
+                android:id="@+id/chkRemember"
+                android:textSize="18dp"
+                android:theme="@style/WhiteCheckBoxStyle"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="20dp"
+                android:text="Beni Hatırla"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:onClick="@{(v) -> loginViewModel.onClick(v)}"
+                android:id="@+id/btnLogin"
+                android:textColor="@color/colorAccent"
+                android:background="@color/colorRedMostDark"
+                android:layout_marginTop="50dp"
+                android:text="Giriş Yap"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

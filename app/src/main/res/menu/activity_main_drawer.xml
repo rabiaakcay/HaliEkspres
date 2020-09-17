@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navigation_bottom_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:title="Anasayfa" />
+        <item
+            android:id="@+id/navigation_rated_process"
+            android:icon="@drawable/ic_rated_process_24dp"
+            android:title="İşlemdekiler" />
+        <item
+            android:id="@+id/nav_customers"
+            android:icon="@drawable/ic_customers_black_24dp"
+            android:title="Müşteriler" />
+        <item
+            android:id="@+id/nav_ready"
+            android:icon="@drawable/ic_ready_black_24dp"
+            android:title="Hazır" />
+        <item
+            android:id="@+id/nav_call"
+            android:icon="@drawable/ic_call_black_24dp"
+            android:title="Arama Geçmişi" />
+        <item
+            android:id="@+id/nav_giving_back"
+            android:icon="@drawable/ic_giving_back_black_24dp"
+            android:title="İade" />
+        <item
+            android:id="@+id/nav_expense"
+            android:icon="@drawable/ic_expense_black_24dp"
+            android:title="Gider Göster" />
+
+    </group>
+
+    <item android:title="Kullanıcı İşlemleri">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_settings_black_24dp"
+                android:title="Ayarlar" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Çıkış Yap" />
+        </menu>
+    </item>
+
+</menu>

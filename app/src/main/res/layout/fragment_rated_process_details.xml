@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <data>
+        <variable
+            name="model"
+            type="com.mervemutlu.haliekspres.models.RatedProcess" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:padding="@dimen/base_list_details_layout_padding" >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            app:cardBackgroundColor="@color/cardviewColor"
+            app:cardCornerRadius="@dimen/cardview_cardCornerRadius"
+            app:cardElevation="@dimen/cardview_cardElevation">
+
+            <LinearLayout
+                android:background="@drawable/bg_cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{model.customerName}"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/base_list_details_title_text_size"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_list_details_items_margin_top"
+                    android:text="@{model.address}"
+                    android:textColor="@color/textColor"
+                    android:textSize="@dimen/base_list_details_description_text_size"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/base_list_details_items_margin_top"
+                    android:background="@color/textColor" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_list_details_items_margin_top">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="İndirim(TL): "
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{model.SIPARIS_INDIRIM_TL + ` TL`}"
+                        android:textColor="@color/colorRedLight" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_list_details_items_margin_top">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="İndirim(%): "
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{Double.toString(model.SIPARIS_INDIRIM_YUZDE)}"
+                        android:textColor="@color/colorRedLight" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_list_details_items_margin_top">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Toplam Fiyat: "
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{model.SIPARIS_TOPLAM + ` TL`}"
+                        android:textColor="@color/colorRedLight" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_list_details_items_margin_top">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ödenen Tutar: "
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:text="@{model.odeme + ` TL`}"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorRedLight" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_list_details_items_margin_top">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="İndirim Sonrası: "
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{model.indirimsonrasi + ` TL`}"
+                        android:textColor="@color/colorRedLight" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_list_details_items_margin_top">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Kalan Tutar: "
+                        android:textColor="@color/textColor"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@{(model.indirimsonrasi - model.odeme) + ` TL`}"
+                        android:textColor="@color/colorRedLight" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/lv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_list_details_items_margin_top"
+                    android:divider="@color/textColor"
+                    android:dividerHeight="0.1dp" />
+
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_list_details_items_margin_top">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sipariş Toplam:"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/tv_piece"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_list_details_total_margin"
+                        android:text="0 Adt."
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/tv_m2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_list_details_total_margin"
+                        android:text="0"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/m2"
+                        android:textColor="@color/textColor" />
+
+                    <TextView
+                        android:id="@+id/tv_amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/base_list_details_total_margin"
+                        android:text="0 TL"
+                        android:textColor="@color/textColor" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_list_details_buttons_margin_top"
+            android:gravity="center"
+            android:weightSum="2.2">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorRedDark"
+                android:drawableTop="@drawable/ic_print_24"
+                android:padding="@dimen/base_list_details_buttons_padding"
+                android:text="Fiş Yazdır"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.2" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorRedDark"
+                android:drawableTop="@drawable/ic_print_24"
+                android:padding="@dimen/base_list_details_buttons_padding"
+                android:text="Etiket Yazdır"
+                android:textAllCaps="false"
+                android:textColor="@color/colorAccent" />
+
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" >
+    <data>
+        <variable
+            name="model"
+            type="com.mervemutlu.haliekspres.models.RatedProcessOrderDetail" />
+    </data>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/cardviewColor"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_column="0"
+                android:gravity="left"
+                android:padding="10sp"
+                android:text="@{model.SIPARISKALEM_BASLIK}"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:layout_column="1"
+                android:gravity="left"
+                android:padding="10sp"
+                android:text="@{model.SIPARISKALEM_M2 + @string/m2}"
+                android:textColor="@color/textColor" />
+
+            <TextView
+                android:layout_column="2"
+                android:gravity="left"
+                android:padding="10sp"
+                android:text="@{model.SIPARISKALEM_FIYAT + ` TL`}"
+
+                android:textColor="@color/textColor" />
+        </TableRow>
+
+
+    </TableLayout>
+</layout>

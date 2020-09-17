@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#e0e0e0</color>
+    <color name="colorPrimaryDark">#000</color>
+    <color name="colorAccent">#fefefe</color>
+    <color name="colorLoginBg">#b10101</color>
+    <color name="colorRedLight">#c4020a</color>
+    <color name="colorRedDark">#9f0007</color>
+    <color name="colorRedMostDark">#8c0106</color>
+
+    <color name="textColor">#323232</color>
+    <color name="textColorGreen">#09a39a</color>
+
+    <color name="cardviewColor">#fff</color>
+</resources>
